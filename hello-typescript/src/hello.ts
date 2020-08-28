@@ -12,13 +12,9 @@ console.log(lable);
 
 console.log("Hello TypeScript !");*/
 
- class Student {
-  constructor(public name: string, public maNum: number) {}
+import { Student } from "./student";
 
-  getLable(): string {
-    return `Student ${this.name} mit Matrikelnummer: ${this.maNum}`;
-  }
-}
+
 
 let s: Student = new Student("Max", 123456);
 let lable: string = s.getLable();
